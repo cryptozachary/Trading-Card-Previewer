@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>NFT Preview Trading Card</title>
+</head>
+
+<body>
+  <!--<h1 class="card-overlay-title">NFT Card Previewer</h1>!-->
+
+  <header class="header1">MOCK NFT CARD PREVIEWER</header>
+  <div class="card">
+    <div class="card-overlay">
+    </div>
+    <img class="nft-card-image">
+    <div id="img-overlay2" class="img-overlay">
+      <img src="images/icon-view.svg" alt="eye-icon">
+    </div>
+    <h2 id="name"> </h2>
+    <p id="description"></p>
+    <div class="container">
+      <div class="price">
+        <img src="images/icon-ethereum.svg" alt="eth-icon">
+        <div class="eth"></div>
+      </div>
+      <div class="time">
+        <img id="nft-art" src="images/icon-clock.svg" alt="clock-icon">
+        <div id="time2"></div>
+      </div>
+    </div>
+    <div class="creator">
+      <img id="creator-pic" class="creator-pic" alt="creator-pic">
+      <div>Creation of <span></span></div>
+    </div>
+    <div class="btn-container">
+      <button id="prev-btn">
+        &lt</button>
+      <button id="next-btn"> &gt</button>
+      <div id="plus">+</div>
+    </div>
+
+    <div class="modal-overlay">
+      <div class="modal-container">
+        <form>
+          <h3 id="form-title">ENTER NFT INFORMATION</h3>
+          <label class="labels" id="labelname">Name</label>
+          <input type="text" maxlength="22" class="input" id="form-name" name="form-name">
+          <label class="labels" id="labeldescription">Description
+            <label class="newimagetoggle" id="ntoggle">NFT Art</label>
+            <label class="newimagetoggle3" id="ctoggle">Creator Art</label>
+          </label>
+          <textarea class="input" maxlength="81" id="description2" name="description"></textarea>
+          <label class="labels" id="labelprice">Price (eth)</label>
+          <input type="text" maxlength="7" class="input" id="form-price" name="price">
+          <label class="labels" id="labeltime">Time Left</label>
+          <input type="text" maxlength="20" class="input" id="time-left" name="time-left">
+          <label class="labels" id="labelcreator">Creator</label>
+          <input type="text" maxlength="18" class="input" id="creator-name" name="creator-name" required>
+          <button type="button" class="formsubmit">SUBMIT</button>
+        </form>
+        <button class="closeBtn">X</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!--<script src="imagefunction.js"></script>!-->
+</body>
+
+</html>
